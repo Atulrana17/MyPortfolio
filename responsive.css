@@ -1,0 +1,280 @@
+@media only screen and (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .hero {
+    padding: 3rem 0;
+  }
+  .services .card {
+    height: 18rem;
+  }
+  .card .card-back p {
+    padding-top: 0;
+  }
+  .card .card-back h2 {
+    font-size: 1.4rem;
+  }
+  .projects .box .img {
+    height: 22rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .hero .text h1 {
+    font-size: 5rem;
+  }
+  .hero .text h3 {
+    font-size: 1.8rem;
+  }
+
+  .about .col-9,
+  .about .col-3 {
+    width: 50%;
+  }
+  .about .text {
+    padding: 0 0 0 2rem;
+  }
+  .about .text li {
+    line-height: 2rem;
+    list-style: outside;
+  }
+  .about .call-text {
+    font-size: 1.6rem;
+  }
+  .about .img {
+    padding: 0 2rem 0 0;
+  }
+  .about .call-to-action .btn {
+    padding: 0.5rem 1.5rem;
+  }
+  .services .col {
+    width: 33%;
+  }
+  .services .card {
+    height: 20rem;
+    margin: 0.5rem;
+  }
+  .projects .box .img {
+    height: 19rem;
+  }
+  #contact .contact-details p {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .hero {
+    padding: 11rem 0;
+    background: url("./MyPicture/MyPictureBg.png") no-repeat center
+      center/contain;
+  }
+  .hero .flexbox {
+    display: block;
+  }
+  .hero .text {
+    text-align: center;
+    z-index: 100;
+  }
+  .hero .text h1 {
+    font-size: 5.5rem;
+  }
+  .hero .img img {
+    display: none;
+  }
+
+  .about ul li {
+    font-size: 1.1rem;
+    line-height: 1.5rem !important;
+  }
+  .about .col-9 {
+    width: 62%;
+  }
+  .about .col-3 {
+    width: 38%;
+  }
+  .about .img img {
+    width: 300px;
+  }
+  .about .call-text {
+    font-size: 1.3rem;
+  }
+
+  .services .col {
+    width: 50%;
+  }
+  .services .card {
+    margin: 1.5rem;
+  }
+  .projects .box .img {
+    height: 16rem;
+  }
+  .projects .box .text {
+    top: 20%;
+  }
+  #contact .contact-details h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    max-width: 600px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .about ul li {
+    font-size: 1.2rem;
+    line-height: 2rem !important;
+  }
+  .about .col-9,
+  .about .col-3 {
+    width: 100%;
+  }
+  .about .img {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .about .img img {
+    width: 400px;
+  }
+  .about .call-text {
+    font-size: 1.5rem;
+  }
+
+  .services .card {
+    height: 18rem;
+    margin: 1rem;
+  }
+
+  .skills .skill {
+    padding: 0.8rem;
+  }
+
+  .projects .col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .projects .box {
+    width: 70%;
+    text-align: center;
+    margin: 0.6rem;
+  }
+  .projects .box .img {
+    height: 20rem;
+  }
+
+  #contact .col {
+    width: 100% !important;
+  }
+  #contact iframe {
+    width: 100%;
+    height: 15rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 450px;
+  }
+
+  .hero .text h1 {
+    font-size: 4.5rem;
+  }
+  .hero .text h3 {
+    font-size: 1.5rem;
+  }
+
+  .about {
+    padding: 2rem 0;
+  }
+  .about ul li {
+    font-size: 1rem;
+    line-height: 1.8rem !important;
+  }
+  .about .call-text {
+    font-size: 1.2rem;
+  }
+  .about .img img {
+    width: 320px;
+  }
+
+  .services .col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .services .card {
+    width: 80%;
+  }
+  .card .card-back p {
+    padding-top: 1rem;
+  }
+
+  .projects .box {
+    width: 80%;
+  }
+  .projects .resume {
+    margin: 1rem 0;
+  }
+
+  .skills .skill {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    max-width: 350px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding: 14rem 0;
+  }
+  .hero .text h1 {
+    font-size: 3.5rem;
+  }
+  .hero .text {
+    line-height: 3.5rem;
+  }
+
+  .about .img img {
+    width: 250px;
+  }
+
+  .projects .box {
+    width: 100%;
+  }
+  .projects .box .img {
+    height: 18rem;
+  }
+  .projects .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .services .card {
+    width: 100%;
+  }
+
+  #contact .contact-details h1 {
+    font-size: 2rem;
+  }
+  #contact .flexbox {
+    padding: 0.5rem;
+  }
+}

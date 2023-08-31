@@ -44,6 +44,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  background: transparent;
 }
 header .logo a {
   color: #f29ee0;
@@ -96,11 +97,14 @@ header .logo a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
 .about .img img {
   transition: all ease 0.5s;
   border-radius: 2rem;
   box-shadow: -1rem -0.8rem 0 #333;
+  width: 450px;
 }
 .about .img img:hover {
   box-shadow: -1.6rem -1.3rem 0 #333;
@@ -132,17 +136,26 @@ header .logo a {
 .services .flexbox {
   margin: 1rem 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+.services .col{
+  width: 25%;
 }
 .services .card {
+  background-color: transparent;
+  height: 20rem;
+  perspective: 62.5rem;
   margin: 0 0.6rem;
+}
+.card .card-inner {
   background-color: transparent;
   width: 25%;
   height: 20rem;
   perspective: 62.5rem;
-}
-.card .card-inner {
+  margin: 0 0.6rem;
+
   position: relative;
   width: 100%;
   height: 100%;
@@ -210,11 +223,42 @@ header .logo a {
   width: 50%;
   padding: 1rem 2rem;
 }
-.skills .skill progress {
+.skills .skill .progress-bar {
   width: 100%;
+  height: 0.9rem;
+  background-color: #dadada;
+  border-radius: 1rem;
 }
-progress::-webkit-progress-value{
-  background-color: #f29ee0 !important;
+.skills .progress-value{
+  height: 0.9rem;
+  border-radius: 1rem;
+  background-color: #6e32bc;
+  position: relative;
+}
+.skills .progress-value-1{
+  width: 75%;
+}
+.skills .progress-value-2{
+  width: 70%;
+}
+.skills .progress-value-3{
+  width: 83%;
+}
+.skills .progress-value-4{
+  width: 45%;
+}
+.skills .progress-value-5{
+  width: 42%;
+}
+.skills .progress-value-6{
+  width: 33%;
+}
+.skills .progress-value span{
+  position: absolute;
+  font-size: 0.8rem;
+  top: -2px;
+  left: 75%;
+
 }
 
 .projects {
@@ -226,8 +270,9 @@ progress::-webkit-progress-value{
 .projects .flexbox {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem 0;
+  flex-wrap: wrap;
 }
 .projects .box .img {
   height: 24rem;
@@ -238,9 +283,11 @@ progress::-webkit-progress-value{
   height: 100%;
   overflow-x: scroll;
 }
+.projects .col{
+  width: 33.33%;
+}
 .projects .box {
   margin: 0 1rem;
-  width: 33.33%;
   position: relative;
 }
 .projects .box .text {
@@ -261,7 +308,6 @@ progress::-webkit-progress-value{
   background-color: #32024c;
   opacity: 0.85;
   display: none;
-  transition: all ease 0.5s;
 }
 .projects .box:hover::after,
 .box:hover .text {
@@ -288,10 +334,10 @@ progress::-webkit-progress-value{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 1rem 0;
+  padding: 2rem;
+  flex-wrap: wrap;
 }
-#contact .contact-details,
-#contact .form {
+#contact .col {
   width: 50%;
 }
 #contact .contact-details i {
