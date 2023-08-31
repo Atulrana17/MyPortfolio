@@ -192,26 +192,29 @@ header .logo a {
   font-size: 1.2rem;
 }
 
-.skills{
+.skills {
   background-color: #32024c;
   padding: 2rem 0;
 }
-.skills h1{
+.skills h1 {
   text-align: center;
 }
-.skills .flexbox{
+.skills .flexbox {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 1rem 0;
 }
-.skills .skill{
+.skills .skill {
   width: 50%;
   padding: 1rem 2rem;
 }
-.skills .skill progress{
+.skills .skill progress {
   width: 100%;
+}
+progress::-webkit-progress-value{
+  background-color: #f29ee0 !important;
 }
 
 .projects {
@@ -226,21 +229,21 @@ header .logo a {
   justify-content: space-between;
   padding: 1rem 0;
 }
-.projects .box .img{
+.projects .box .img {
   height: 24rem;
 }
-.projects .box img{
+.projects .box img {
   border-radius: 1rem;
   width: 100%;
   height: 100%;
   overflow-x: scroll;
 }
-.projects .box{
+.projects .box {
   margin: 0 1rem;
   width: 33.33%;
   position: relative;
 }
-.projects .box .text{
+.projects .box .text {
   text-align: center;
   position: absolute;
   top: 30%;
@@ -248,9 +251,9 @@ header .logo a {
   display: none;
   padding: 0.5rem;
 }
-.projects .box::after{
-  content: '';
-  position:absolute;
+.projects .box::after {
+  content: "";
+  position: absolute;
   top: 0;
   border-radius: 1rem;
   height: 100%;
@@ -260,61 +263,68 @@ header .logo a {
   display: none;
   transition: all ease 0.5s;
 }
-.projects .box:hover::after, .box:hover .text{
+.projects .box:hover::after,
+.box:hover .text {
   display: block;
 }
-.projects .text a{
+.projects .text a {
   color: #f29ee0;
   font-size: 1.2rem;
   font-weight: 900;
 }
-.projects .resume{
+.projects .resume {
   text-align: center;
   margin: 3rem;
 }
-.projects .btn{
+.projects .btn {
   padding: 0.8rem 2rem;
 }
 
-#contact{
+#contact {
   padding: 2rem 0;
   background-color: #32024c;
 }
-#contact .flexbox{
+#contact .flexbox {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 1rem 0;
 }
-#contact .contact-details, #contact .form{
+#contact .contact-details,
+#contact .form {
   width: 50%;
 }
-#contact .contact-details i{
+#contact .contact-details i {
   margin: 0 0.5rem;
 }
-#contact .contact-details a:hover{
+#contact .contact-details a:hover {
   color: #f29ee0;
 }
-#contact .contact-details p{
+#contact .contact-details p {
   font-size: 1.2rem;
-  margin: 1.5rem 0;
+  margin: 0.5rem 0;
 }
-#contact .form input,select,textarea{
+#contact .form input,
+select,
+textarea {
   width: 100%;
+  max-width: 100%;
   padding: 0.5rem 0.8rem;
   border: none;
-  margin: 0.3rem 0;
+  margin: 0.5rem 0;
   font-size: 1.2rem;
   border-radius: 0.4rem;
 }
-#contact .form input:focus,select:focus,textarea:focus{
+#contact .form input:focus,
+select:focus,
+textarea:focus {
   outline: none;
 }
-#contact .form .btn{
+#contact .form .btn {
   padding: 0.6rem 2rem;
 }
 
-.footer{
+.footer {
   padding: 1rem;
   text-align: center;
   font-size: 1.1rem;
