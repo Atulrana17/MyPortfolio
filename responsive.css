@@ -218,6 +218,9 @@
   .services .card {
     width: 80%;
   }
+  .card .card-back{
+    padding: calc(1rem + 2vw) 4vw;
+  }
   .card .card-back p {
     padding-top: 1rem;
   }
