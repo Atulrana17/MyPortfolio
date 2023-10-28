@@ -254,13 +254,13 @@ header .logo a {
   position: relative;
 }
 .skills .progress-value-1{
-  width: 75%;
+  width: 88%;
 }
 .skills .progress-value-2{
-  width: 70%;
+  width: 85%;
 }
 .skills .progress-value-3{
-  width: 83%;
+  width: 90%;
 }
 .skills .progress-value-4{
   width: 45%;
@@ -386,6 +386,7 @@ textarea:focus {
 }
 #contact .form .btn {
   padding: 0.6rem 2rem;
+  cursor: pointer;
 }
 
 .footer {
